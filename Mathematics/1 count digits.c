@@ -14,3 +14,6 @@ if(n==0)
   return 0;
 return 1+ countDigits(n/10); 
   }
+
+//logarithmic solution
+return floor(log10(n)+1);
