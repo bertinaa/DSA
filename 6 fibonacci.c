@@ -17,7 +17,7 @@ int f[n+1];
     return f[n];
 }
 
-//best solution in terms of auxilliary and space complexity
+//best solution in terms of auxilliary and space complexity because constant number of variables are used (a,b,c) and they are not dependant on n so theta(1) is the space/auxiliary comp
 int fib(int n)
 {
 if(n==0 || n==1)
