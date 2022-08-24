@@ -1,3 +1,5 @@
+// naive approach -> because it gives overflow even for small values of n
+// for example if n=20, then n! is 20! which is a lot of numbers
 int countZeros(int n)
 {
     int fact = 1;
@@ -13,3 +15,6 @@ int countZeros(int n)
     }
     return res;
 }
+
+// Efficient approach
+
