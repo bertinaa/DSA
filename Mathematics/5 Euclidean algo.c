@@ -6,23 +6,6 @@ Then
 gcd(a,b) = gcd(a-b,b)
 *******************************************************************************/
 
-#include <stdio.h>
-//naive solution
-int gcd(int a,int b)
-{
-    while(a!=b)
-    {
-        if(a>b)
-        {
-            a = a-b;
-        }
-        else
-        {
-            b = b-a;    
-        }
-    }
-    return a;
-}
 //optimized solution
 int gcd(int a,int b)
 {
