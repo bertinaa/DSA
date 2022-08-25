@@ -17,4 +17,14 @@ int countZeros(int n)
 }
 
 // Efficient approach
-
+// (5*2) contributes a 0. So trailing zeros can be found just by finding
+// how many multiples of 5 are there in the number
+int countTrailingZeros(int n)
+{
+    int res = 0;
+    for(int i=5; i<=5; i=i*5)
+    {
+        res = res + n/i;
+    }
+    return res;
+}
